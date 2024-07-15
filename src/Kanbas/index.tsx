@@ -2,27 +2,27 @@ import Dashboard from "./Dashboard";
 import KanbasNavigation from "./Navigation"
 import { Routes, Route, Navigate } from "react-router";
 import Courses from "./Courses";
+import "./styles.css"
 
 export default function Kanbas() {
     return (
       <div id="wd-kanbas">
-        <table>
-            <tr>
-             <td valign="top">
+        <div className="d-flex">
+            <div className="d-none d-md-block bg-black">
              <KanbasNavigation />
-            </td>
-             <td valign="top">
-             <Routes>
+            </div>
+            <div  className="wd-main-content-offset p-3">
+            <Routes>
               <Route path="/" element={<Navigate to="Dashboard" />} />
 
               <Route path="Dashboard" element={<Dashboard />} />
               <Route path="Courses/:id/*" element={<Courses />} />
 
             </Routes>
+            </div>
+            </div> 
             
-            </td>
-            </tr>
-        </table>
+            
         </div>
   );
 }

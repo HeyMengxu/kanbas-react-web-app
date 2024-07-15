@@ -1,49 +1,29 @@
+import CoursesNavigation from "../Navigation";
+import AssignmentsContent from "./AssignmentsContent";
+// import KanbasNavigation from "../../Navigation";
+
 export default function Assignments() {
-    return (
-      <div id="wd-assignments">
-        <input id="wd-search-assignment"
-               placeholder="Search for Assignments" />
-        <button id="wd-add-assignment-group">+ Group</button>
-        <button id="wd-add-assignment">+ Assignment</button>
+  return (
+    <div className="container-fluid mt-4">
+    <div className="row">
+      {/* Kanbas Navigation Sidebar
+      <div className="col-lg-2 col-md-3 d-none d-md-block">
+        <KanbasNavigation />
+      </div> */}
 
-        <h3 id="wd-assignments-title">
-          ASSIGNMENTS 40% of Total <button>+</button>
-        </h3>
-        <ul id="wd-assignment-list">
-
-          <li className="wd-assignment-list-item">
-            <a className="wd-assignment-link"
-              href="#/Kanbas/Courses/1234/Assignments/123">
-              A1 - ENV + HTML
-            </a>
-            <div id="wd-assignment-details">
-          <span>Multiple Modules | <strong>Not available until</strong> May 6 at 12:00am |</span>
-          <span id="due"><strong>Due</strong> May 13 at 11:59pm | 100 pts</span>
-        </div>
-          </li>
-
-          <li className="wd-assignment-list-item">
-               <a className="wd-assignment-link" href="#/Kanbas/Courses/1234/Assignments/124">
-          A2 - CSS + BOOTSTRAP
-        </a>
-        <div id="wd-assignment-details">
-          <span>Multiple Modules | <strong>Not available until</strong> May 13 at 12:00am |</span>
-          <span id="due"><strong>Due</strong> May 20 at 11:59pm | 100 pts</span>
-        </div>
-          </li>
-
-          <li className="wd-assignment-list-item">
-               <a className="wd-assignment-link" href="#/Kanbas/Courses/1234/Assignments/125">
-          A3 - JS + REACT
-        </a>
-        <div id="wd-assignment-details">
-          <span>Multiple Modules | <strong>Not available until</strong> May 20 at 12:00am |</span>
-          <span id="due"><strong>Due</strong> May 27 at 11:59pm | 100 pts</span>
-        </div>
-          </li>
-
-
-        </ul>
+      {/* Course Navigation Sidebar */}
+      <div className="col-lg-2 col-md-3 d-none d-md-block">
+        <CoursesNavigation />
       </div>
-  );}
+
+      {/* Assignments */}
+      <div className="col-lg-10 col-md-9 col-12">
+        <AssignmentsContent />
+      </div>
+
   
+    </div>
+  </div>
+
+  );
+}
