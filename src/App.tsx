@@ -9,7 +9,7 @@ function App() {
   return (
     <HashRouter>
       <div className="App">
-        <h4>Mengxu Pan, CS5610 61065 SUM2 Section01 </h4>
+        {/* <h4>Mengxu Pan, CS5610 61065 SUM2 Section01 </h4> */}
         <Routes>
           <Route path="/" element={<Navigate to="Labs" />} />
           <Route path="/Labs/*" element={<Labs />} />
