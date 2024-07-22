@@ -8,6 +8,7 @@ import LessonControlButtons from "./LessonControlButtons";
 
 export default function Modules() {
     return (
+      
       <div>
         <ModulesControls /><br /><br /><br /><br />
         <ul id="wd-modules" className="list-group rounded-0">
