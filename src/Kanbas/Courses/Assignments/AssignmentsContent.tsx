@@ -42,6 +42,7 @@ export default function AssignmentsContent() {
       //     points: '100 pts'
       //   }
       // ];
+      
     
       console.log("Course ID:", cid);
   console.log("Assignments data:", db.assignments);
